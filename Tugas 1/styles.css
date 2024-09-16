@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background: url('https://img.freepik.com/free-photo/background_53876-32170.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    filter: blur(100px); 
+    z-index: 0;
+    display: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1; 
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: none;
+    
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.description {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.link-item:hover {
+    background-color: #f0f0f0;
+}
+
+.link-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 5px;
+    object-fit: cover;
+    align-items: left; 
+}
+
+.link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center; 
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
